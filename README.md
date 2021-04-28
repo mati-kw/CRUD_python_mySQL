@@ -1,7 +1,7 @@
 # CRUD_python_mySQL
 Simple crud app for managing "test" database.
 
-**Project needs: **
+**Project needs:**
 - tkinter module (ubuntu: sudo apt-get install python3-tk)
 - MySQL Connector/python (https://dev.mysql.com/downloads/connector/python/) 
 
