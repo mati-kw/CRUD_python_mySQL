@@ -16,10 +16,10 @@ INSERT INTO MyGuests (firstname,lastname)VALUES (first, last);
 END//
 DELIMITER ;
 
---DROP PROCEDURE add_guest;
+-- DROP PROCEDURE add_guest;
 
---call add_guest('Jan','Czerwiec');
---select * from MyGuests;
+-- call add_guest('Jan','Czerwiec');
+-- select * from MyGuests;
 
 DELIMITER //
 CREATE PROCEDURE delete_guest ( identificator INT)
@@ -27,7 +27,7 @@ BEGIN
 DELETE FROM MyGuests WHERE MyGuests.id = identificator;
 END//
 DELIMITER ;
---call delete_guest(2);
+-- call delete_guest(2);
 
 DELIMITER //
 CREATE PROCEDURE update_record (IN identificator INT, first varchar(30), IN last varchar(30))
@@ -38,6 +38,6 @@ WHERE MyGuests.id = identificator;
 END//
 DELIMITER ;
 
---DROP PROCEDURE update_record;
+-- DROP PROCEDURE update_record;
 
---call update_record(1,'Jan','Kwiecien');
+-- call update_record(1,'Jan','Kwiecien');
